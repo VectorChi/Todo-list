@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="todo_container">
+      <!-- Upper part of the form -->
+      <div class="todo_top">
+        <div class="todo_title">
+          <p>Todo-List by <a href="#" class="my_profile">VectorChi</a></p>
+          <h4>What would you like to do today?</h4>
+        </div>
+
+        <form class="todo_input" id="myForm">
+          <input
+            type="text"
+            id="new_task"
+            name="task"
+            placeholder="Type a task"
+            minlength="4"
+            required
+          />
+
+          <button type="submit"><i data-feather="plus"></i>Add</button>
+        </form>
+      </div>
+
+      <!-- Lower part of the form -->
+      <div class="todo_bottom">
+        <p class="list_title">Task-list</p>
+        <!-- list container -->
+        <div class="task_list">
+          <!-- list items -->
+          <div class="listItem">
+            <p class="task_active">Submit maths assignment</p>
+            <div class="option">
+              <i data-feather="check" class="done"></i>
+              <i data-feather="x" class="delete"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

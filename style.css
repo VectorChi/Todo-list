@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+:root {
+  --mainBlack: #191919;
+  --offBlack: #333333;
+  --darkGrey: #b5b0b5;
+  --lightGrey: #f5f4f5;
+  --almostWhite: #fafafa;
+  --mainGreen: #04ab47;
+  --mainRed: #d82b05;
+}
+.todo_container {
+  margin: 8em auto;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: max-content;
+  gap: 4em;
+}
+/* title_style */
+
+.todo_title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+.todo_title p,
+.todo_title .my_profile {
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.todo_title p {
+  color: var(--darkGrey);
+}
+.todo_title .my_profile {
+  color: var(--offBlack);
+  text-decoration: none;
+}
+h4 {
+  color: var(--mainBlack);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 113.6%;
+  letter-spacing: -0.04em;
+  width: 50%;
+}
+
+/* input style */
+.todo_input {
+  display: flex;
+  gap: 1em;
+}
+input {
+  padding: 1em 1.25em;
+  width: 32em;
+  background-color: var(--lightGrey);
+  border: none;
+  border-radius: 0.375em;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--mainBlack);
+}
+input::placeholder {
+  font-size: 1em;
+  color: var(--darkGrey);
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+button {
+  background-color: var(--mainBlack);
+  padding: 1em 1.5em;
+  font-size: 1em;
+  color: var(--almostWhite);
+  border: none;
+  border-radius: 0.375em;
+}
+
+button .feather {
+  margin-bottom: -0.3em;
+  margin-right: 0.4em;
+}
+
+.todo_top {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* list style */
+.task_list,
+.listItem,
+.todo_bottom,
+.option {
+  display: flex;
+}
+.todo_bottom,
+.option {
+  gap: 1em;
+}
+.task_list {
+  gap: 0.5em;
+}
+
+.todo_bottom,
+.task_list {
+  flex-direction: column;
+}
+
+.list_title {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--darkGrey);
+}
+
+.listItem {
+  justify-content: space-between;
+  padding: 1.25em;
+  width: 100%;
+  background-color: var(--almostWhite);
+  border-radius: 0.375em;
+}
+
+.task_active {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--offBlack);
+}
+
+.task_done {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--offBlack);
+}
+
+.done:hover {
+  color: var(--mainGreen);
+}
+.delete:hover {
+  color: var(--mainRed);
+}
+
+.task_finished {
+  text-decoration: line-through;
+  color: var(--darkGrey);
+}
