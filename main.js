@@ -4,7 +4,6 @@ const done = document.querySelector(".done");
 const taskList = document.querySelector(".task_list");
 const listItem = document.querySelector(".listItem");
 const options = document.querySelector(".option");
-console.log(options);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

@@ -140,9 +140,11 @@ button .feather {
 
 .done:hover {
   color: var(--mainGreen);
+  cursor: pointer;
 }
 .delete:hover {
   color: var(--mainRed);
+  cursor: pointer;
 }
 
 .task_finished {
