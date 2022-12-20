@@ -151,3 +151,14 @@ button .feather {
   text-decoration: line-through;
   color: var(--darkGrey);
 }
+
+.done,
+.delete {
+  color: var(--offBlack);
+  width: 24px;
+  height: 24px;
+}
+
+.hidden {
+  display: none;
+}
