@@ -70,7 +70,9 @@ input::placeholder {
   letter-spacing: -0.015em;
   font-weight: 600;
 }
-
+input:focus {
+  outline: 2px solid var(--offBlack);
+}
 button {
   background-color: var(--mainBlack);
   padding: 1em 1.5em;
