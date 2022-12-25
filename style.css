@@ -17,8 +17,7 @@
   margin: 8em auto;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
-  width: max-content;
+  width: 40%;
   gap: 4em;
 }
 /* title_style */
@@ -161,4 +160,79 @@ button .feather {
 
 .hidden {
   display: none;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .todo_container {
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .todo_title,
+  input,
+  .todo_top {
+    width: 100%;
+  }
+  .todo_input {
+    flex-direction: column;
+  }
+  h4 {
+    width: 70%;
+  }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+  .todo_container {
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .todo_title,
+  input,
+  .todo_top {
+    width: 100%;
+  }
+  .todo_input {
+    flex-direction: column;
+  }
+  h4 {
+    width: 70%;
+  }
+}
+@media (min-width: 601px) and (max-width: 780px) {
+  .todo_container {
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .todo_title,
+  input,
+  .todo_top {
+    width: 100%;
+  }
+  .todo_input {
+    flex-direction: row;
+  }
+  h4 {
+    width: 70%;
+  }
+  input {
+    width: 77%;
+  }
+}
+@media (min-width: 781px) and (max-width: 960px) {
+  .todo_container {
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .todo_title,
+  input,
+  .todo_top {
+    width: 100%;
+  }
+  .todo_input {
+    flex-direction: row;
+  }
+  h4 {
+    width: 70%;
+  }
+  input {
+    width: 77%;
+  }
 }

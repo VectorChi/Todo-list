@@ -49,7 +49,6 @@ form.addEventListener("submit", (e) => {
   dltBtns.forEach((dltBtns) => {
     dltBtns.addEventListener("click", (event) => {
       parent = event.target.parentElement.parentElement;
-      // task_element = parent.firstChild.nextElementSibling;
       parent.remove();
     });
   });
