@@ -39,5 +39,6 @@ taskList.addEventListener("click", (e) => {
   if (e.target.classList.contains("done")) {
     e.target.parentElement.parentElement.firstElementChild.className =
       "task_finished";
+    e.target.remove();
   }
 });
